@@ -1,0 +1,38 @@
+{
+  "name": "nx-mfe-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently -n \"shop,shell\" -c \"cyan,magenta\" \"npm run serve:shop\" \"npm run serve:shell\"",
+    "serve:shop": "vite build --config apps/shop/vite.config.ts && vite preview --port 4201 --config apps/shop/vite.config.ts",
+    "serve:shell": "vite --port 4200 --config apps/shell/vite.config.ts",
+    "dev:shop": "vite --port 4201 --config apps/shop/vite.config.ts",
+    "build": "nx run-many -t build",
+    "build:shop": "vite build --config apps/shop/vite.config.ts",
+    "build:shell": "vite build --config apps/shell/vite.config.ts",
+    "test": "vitest run",
+    "test:ui": "vitest run libs/ui",
+    "test:shop": "vitest run apps/shop",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.3.9",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^20.17.6",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.0",
+    "jsdom": "^25.0.1",
+    "nx": "^20.0.6",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}

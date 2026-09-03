@@ -1,0 +1,114 @@
+.shop-app {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+}
+
+.shop-header {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
+  padding: 16px 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.shop-header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-branding {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.shop-branding h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.shop-badge {
+  background-color: #0ea5e9;
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.shop-port-tag {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-family: monospace;
+}
+
+.shop-cart-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cart-icon {
+  font-size: 16px;
+}
+
+.cart-total {
+  color: #38bdf8;
+}
+
+.shop-banner {
+  background-color: #e0f2fe;
+  border-bottom: 1px solid #bae6fd;
+  padding: 10px 24px;
+  font-size: 13px;
+  color: #0369a1;
+}
+
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner-content code {
+  background-color: #f0f9ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.shop-main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 24px auto;
+  padding: 0 24px;
+  flex: 1 1 auto;
+}
+
+.shop-footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  padding: 20px 24px;
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+  margin-top: auto;
+}
